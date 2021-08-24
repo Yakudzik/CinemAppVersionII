@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/oneElementPosterID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/poster" />
+
+    <TextView
+        android:id="@+id/postercounterID"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:background="@drawable/my_gradient_up_down"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/oneElementTitleID"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:paddingTop="60dp"
+        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:paddingRight="16dp"
+         android:maxLines="2"
+        android:ellipsize="end"
+        android:background="@drawable/my_gradient_down_up"
+        android:text="test text 1212   textHello  1212 1212 1212 1212test text 1212 Hello test text 1212 Hellotest text 1212 Hellotest text 1212 Hello"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
